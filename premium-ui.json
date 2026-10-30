@@ -1,0 +1,32 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": [
+    "admin.html",
+    "admin.js",
+    "admin.css"
+  ],
+  "locale": "en-GB",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": [
+    "Select/Listbox",
+    "Date",
+    "Form",
+    "Scrollbar",
+    "Toast",
+    "CRUD"
+  ],
+  "ownership": {
+    "Select/Listbox": "native",
+    "Date": "native"
+  },
+  "requiredCommands": [
+    "unit"
+  ],
+  "commands": {
+    "unit": "node --test tests/*.test.mjs"
+  },
+  "evidence": {
+    "crudFullFlow": "docs/VERIFICATION.md",
+    "failurePaths": "tests/regression.test.mjs"
+  }
+}
